@@ -1,0 +1,139 @@
+                /* HEADER */
+                
+                .navbar {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: space-between;
+                }
+                
+                .logo {
+                    height: 30px
+                }
+                
+                .header {
+                    margin-left: 16px;
+                    margin-right: 16px;
+                }
+                
+                .texto-titulo {
+                    text-align: justify;
+                    font-weight: 200;
+                }
+                
+                @media (min-width: 468px) {
+                    .header {
+                        margin-left: 100px;
+                    }
+                }
+                
+                nav {
+                    .listanav {
+                        display: block;
+                        display: flex;
+                        list-style: none;
+                    }
+                    .listanav a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 16px;
+                    }
+                    .listanav li {
+                        margin-right: 20px;
+                        font-family: 'IBM Plex Mono', monospace;
+                    }
+                    .logo {
+                        margin-left: 10px;
+                    }
+                    .menuham {
+                        .fa-times,
+                        .fa-bars,
+                        .toggle {
+                            display: none;
+                        }
+                    }
+                }
+                
+                .titulo {
+                    margin-bottom: 5px;
+                    width: 240px;
+                }
+                
+                .titulo span {
+                    color: blue;
+                }
+                
+                nav a:hover {
+                    color: #00f3bb;
+                }
+                
+                @media (min-width: 568px) {
+                    .titulo {
+                        width: 100%;
+                    }
+                }
+                
+                .texto-titulo {
+                    text-align: justify;
+                    max-width: 628px;
+                }
+                /* HEADER MOBILE */
+                
+                @media (max-width: 468px) {
+                    nav {
+                        display: flex;
+                        justify-content: space-between;
+                        .menuham {
+                            display: flex;
+                            margin: 20px;
+                            .fa-times {
+                                display: none;
+                                font-size: 18px;
+                            }
+                            .fa-bars {
+                                display: block;
+                                font-size: 18px;
+                            }
+                            .toggle {
+                                display: block;
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                            }
+                            #btnmenu:checked~.fa-bars {
+                                display: none;
+                            }
+                            #btnmenu:checked~.fa-times {
+                                display: block;
+                            }
+                            .listanav {
+                                position: absolute;
+                                top: 47px;
+                                display: none;
+                                right: 0;
+                                width: 100%;
+                            }
+                            .listanav a {
+                                color: white;
+                                font-weight: 100;
+                                font-family: 'IBM plex Mono', 'sans serif';
+                                padding-left: 10px;
+                            }
+                            .listanav a:hover {
+                                color: #00F3BB;
+                                cursor: pointer;
+                            }
+                        }
+                        #btnmenu:checked~.listanav {
+                            position: absolute;
+                            display: block;
+                            margin-left: 0px;
+                            background-color: #0000EC;
+                            padding: 13px 0 13px 0;
+                        }
+                        #btnmenu:checked~.listanav li {
+                            padding-bottom: 5px;
+                        }
+                    }
+                }

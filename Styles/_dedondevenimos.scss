@@ -1,0 +1,42 @@
+/* DE DONDE VENIMOS */
+
+.telefono img {
+    max-width: 400px;
+    max-height: 550px;
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+}
+
+.texto-ddv h2 {
+    max-width: 150px;
+}
+
+.texto-ddv p {
+    font-size: 12px;
+    font-weight: lighter;
+    word-spacing: 2px;
+    font-family: 'IBM Plex Mono', 'sans serif';
+    text-align: justify;
+}
+
+@media (min-width: 468px) {
+    .telefono {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenedor-ddv {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .textddv {
+        max-width: 300px;
+        grid-column: 3/4;
+    }
+    .telefono {
+        grid-column: 2/3;
+        display: block;
+    }
+}

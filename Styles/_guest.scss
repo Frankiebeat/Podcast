@@ -1,0 +1,27 @@
+/* GUESTS */
+
+.guest-tit {
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+.guestcontainer img {
+    width: 100%;
+}
+
+.guestcontainer {
+    display: grid;
+}
+
+@media (min-width: 468px) {
+    .guestcontainer {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .guestcontainer {
+        grid-template-columns: repeat(3, 33.3%);
+    }
+}

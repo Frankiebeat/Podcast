@@ -1,0 +1,33 @@
+/* NEWS */
+
+.news {
+    margin-top: 50px;
+    background-image: linear-gradient(#0000FF, #0000A3);
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+    height: 400px;
+    padding: 20px;
+}
+
+.news-tit {
+    color: white;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.boton-news {
+    margin: 50px;
+}
+
+@media (min-width: 468px) {
+    .boton-news {
+        margin: 0 auto;
+        min-width: 400px;
+    }
+    .news-tit {
+        display: block;
+        min-width: 600px;
+    }
+}
