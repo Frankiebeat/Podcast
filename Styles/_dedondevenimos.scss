@@ -29,7 +29,7 @@
 @media (min-width: 1024px) {
     .contenedor-ddv {
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 15% 25% auto;
     }
     .textddv {
         max-width: 300px;

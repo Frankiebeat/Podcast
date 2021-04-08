@@ -334,8 +334,8 @@ nav a:hover {
   .contenedor-ddv {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 25% 25% 25% 25%;
-        grid-template-columns: 25% 25% 25% 25%;
+    -ms-grid-columns: 15% 25% auto;
+        grid-template-columns: 15% 25% auto;
   }
   .textddv {
     max-width: 300px;
