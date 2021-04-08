@@ -233,7 +233,7 @@ nav a:hover {
   padding: 20px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 968px) {
   .episodios {
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
             clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -283,7 +283,7 @@ nav a:hover {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 968px) {
   .contenedor-podcast {
     display: -ms-grid;
     display: grid;

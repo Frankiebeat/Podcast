@@ -8,7 +8,7 @@
     padding: 20px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 968px) {
     .episodios {
         clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
         height: auto;
@@ -55,7 +55,7 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 968px) {
     .contenedor-podcast {
         display: grid;
         grid-template-columns: 1fr 1fr;
